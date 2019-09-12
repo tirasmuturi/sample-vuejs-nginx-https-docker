@@ -75,3 +75,25 @@ These can be changed when the contributors reach a consensus.
 ## Connect
 
 Join us on [Discord](https://discord.gg/NE2jNmg)
+
+## Running Docker
+
+<p>
+Generate ssl certificate bu running this command
+
+./gen_ssl
+
+If you are using cloudflare you should consider reading this article
+  - [Generate ssl using Cloudflare](https://www.digitalocean.com/community/tutorials/how-to-host-a-website-using-cloudflare-and-nginx-on-ubuntu-16-04)
+Concentrate on the part of generating the cert.pem and key.pem
+
+Copy the cert.pem to nginx/my-site.cert.pem 
+
+Copy the key.pem to nginx/my-site.key.pem
+
+Uncomment the nginx part of using cloudflare and comment out 'Custom Server certificate and key'.
+
+
+
+</p>
+
